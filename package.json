@@ -1,0 +1,53 @@
+{
+  "name": "cxe-zendesk-config-sync",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,ui -c cyan,magenta \"tsx watch server/index.ts\" \"vite --host 0.0.0.0\"",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:ui": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "start": "node build-server/server/index.js",
+    "build:server": "tsc -p tsconfig.server.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run test && npm run build && npm run build:server && npm run zendesk:validate",
+    "zendesk:configure": "node scripts/configure-zendesk.mjs",
+    "zendesk:login": "zcli login -i",
+    "zendesk:validate": "zcli apps:validate zendesk",
+    "zendesk:package": "zcli apps:package zendesk",
+    "zendesk:create": "npm run zendesk:configure && zcli apps:create zendesk",
+    "zendesk:update": "npm run zendesk:configure && zcli apps:update zendesk",
+    "package:zendesk": "npm run zendesk:package"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "helmet": "latest",
+    "jose": "latest",
+    "lucide-react": "latest",
+    "pino": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/cookie-parser": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@zendesk/zcli": "1.1.4",
+    "archiver": "8.0.0",
+    "concurrently": "latest",
+    "jsdom": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}

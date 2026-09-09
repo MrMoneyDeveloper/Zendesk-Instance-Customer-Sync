@@ -1,0 +1,294 @@
+.table-wrap {
+  overflow-x: auto;
+}
+
+.download-center {
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #b9dce2;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff 0%, #edf7f8 100%);
+  box-shadow: 0 5px 18px rgba(3, 54, 61, .06);
+}
+
+.download-center-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.download-center-head h2 {
+  margin: 0;
+  color: #03363d;
+  font-size: 19px;
+}
+
+.download-center-head p,
+.report-card-copy p {
+  margin: 5px 0 0;
+  color: #68737d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.report-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.report-download-card {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid #d8dcde;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.report-number {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #03363d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.report-card-copy h3 {
+  margin: 2px 0 0;
+  color: #2f3941;
+  font-size: 14px;
+}
+
+.report-format-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 7px;
+  margin-top: 3px;
+}
+
+.report-format-actions .btn {
+  flex: 1;
+}
+
+.report-utility-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px solid #d8dcde;
+}
+
+.report-utility-row .help {
+  margin-left: auto;
+  max-width: 560px;
+  text-align: right;
+}
+
+.support-diagnostic ul {
+  margin: 8px 0 0;
+  padding-left: 19px;
+}
+
+.support-diagnostic li {
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+
+.readonly-field {
+  min-height: 38px;
+  padding: 9px;
+  border: 1px solid #d8dcde;
+  border-radius: 5px;
+  color: #68737d;
+  background: #f7f9fa;
+  font-size: 12px;
+}
+
+.role-table-block {
+  margin-top: 18px;
+}
+
+.role-table-block h3 {
+  margin: 0 0 5px;
+  color: #2f3941;
+  font-size: 14px;
+}
+
+.subtabs + .panel,
+.stats + .panel,
+.panel + .panel {
+  margin-top: 14px;
+}
+
+.health-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.health-table th,
+.health-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid #d8dcde;
+  text-align: left;
+  vertical-align: top;
+}
+
+.health-table th {
+  color: #49545c;
+  background: #f8f9f9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.health-table.compact th,
+.health-table.compact td {
+  padding: 8px 10px;
+}
+
+.health-stats {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  margin-bottom: 16px;
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.risk-card {
+  padding: 14px;
+  border: 1px solid #d8dcde;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.risk-value {
+  color: #1f73b7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.risk-label {
+  margin-top: 5px;
+  color: #68737d;
+  font-size: 12px;
+}
+
+.subtabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #d8dcde;
+}
+
+.subtabs .tab {
+  border-bottom-width: 3px;
+}
+
+.health-breakdown {
+  margin-bottom: 10px;
+}
+
+.scorecard-table {
+  min-width: 980px;
+}
+
+.scorecard-table select {
+  min-width: 145px;
+  padding: 7px 8px;
+  border: 1px solid #87929d;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.score-question {
+  min-width: 260px;
+  color: #2f3941;
+  font-weight: 600;
+}
+
+.score-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.score-pill.yes {
+  color: #0b5f55;
+  background: #d5f5ef;
+}
+
+.score-pill.no {
+  color: #8c232c;
+  background: #ffe2e6;
+}
+
+.score-pill.manual,
+.score-pill.unavailable {
+  color: #704d00;
+  background: #fff0c7;
+}
+
+.score-pill.na {
+  color: #49545c;
+  background: #e9ebed;
+}
+
+.source-note {
+  margin-top: 5px;
+  color: #68737d;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.score-yes td:first-child {
+  border-left: 3px solid #2f9f8f;
+}
+
+.score-no td:first-child {
+  border-left: 3px solid #cc3340;
+}
+
+.score-manual td:first-child,
+.score-unavailable td:first-child {
+  border-left: 3px solid #e9a83f;
+}
+
+@media (max-width: 850px) {
+  .health-stats,
+  .risk-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .report-download-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-center-head,
+  .report-utility-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .report-utility-row .help {
+    margin-left: 0;
+    text-align: left;
+  }
+}

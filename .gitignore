@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build-server/
+packages/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+zendesk/tmp/
+zendesk/zcli.apps.config.json
+.DS_Store

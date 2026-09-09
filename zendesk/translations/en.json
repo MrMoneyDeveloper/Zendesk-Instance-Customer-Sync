@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "CXE Zendesk Configuration Sync",
+    "short_description": "Read-only Zendesk configuration intelligence for authorised CX Experts staff.",
+    "long_description": "Connect an existing CX Experts client record to its Zendesk instance, retrieve configuration on demand, inspect individual areas, and produce sanitised or raw exports without retrieving ticket conversations or changing client configuration.",
+    "installation_instructions": "Deploy the secure service first, enter its HTTPS base URL in the service_url setting, install this app privately in the CX Experts Zendesk instance, restrict access to approved roles and groups, and verify the schema from Setup / Repair."
+  }
+}

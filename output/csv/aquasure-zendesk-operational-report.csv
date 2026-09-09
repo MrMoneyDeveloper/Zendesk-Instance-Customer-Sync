@@ -1,0 +1,80 @@
+Client,Report,Section,Item,Email / Web Form,Messaging,Value,Additional detail
+Aquasure,Operational Health,Methodology,Ticket volume source,,,Zendesk Search Count,Exact monthly Email/Web Form and native Messaging counts; not limited by Search result pagination
+Aquasure,Operational Health,Methodology,Duration and satisfaction source,,,Bounded stratified Zendesk API sample,Bounded stratified API sample: up to 60 tickets from five monthly cohorts across the 12-month window. Monthly Email/Web and Messaging volumes use exact Zendesk Search Count queries.
+Aquasure,Operational Health,Methodology,Full-population KPI validation,,,Zendesk Explore required,"Zendesk Explore is the authoritative full-population reporting surface for these KPIs. The public Zendesk API reference does not expose an Explore query-results endpoint to this single-ZIP app. Validate reply time, resolution time, requester wait, CSAT and rated ratio in the Support and Messaging Explore datasets before final client use; API and Explore results can differ because their calculations, date filters, processing and refresh timing differ."
+Aquasure,Operational Health,Methodology,Metric-set coverage,,,123 of 123 sampled tickets,100.0%
+Aquasure,Operational Health,Channel metrics,Tickets Created Monthly (average over last 12 months),1192.4,89.8,,
+Aquasure,Operational Health,Channel metrics,"First Reply Time (median, calendar)",25 min,21 min,,
+Aquasure,Operational Health,Channel metrics,"Full Resolution Time (median, calendar)",20 min,21h 17m,,
+Aquasure,Operational Health,Channel metrics,"Requester Wait Time (median, calendar)",11 min,2h 36m,,
+Aquasure,Operational Health,Channel metrics,Satisfaction Score,100.0%,No data,,
+Aquasure,Operational Health,Channel metrics,% Tickets Rated (of solved tickets),3.3%,0.0%,,
+Aquasure,Operational Health,Queue risks,Unsolved,,,709,
+Aquasure,Operational Health,Queue risks,Stale unsolved >7d,,,3,
+Aquasure,Operational Health,Queue risks,Stale pending >7d,,,3,
+Aquasure,Operational Health,Queue risks,Negative CSAT,,,54,
+Aquasure,Operational Health,Queue risks,Suspended,,,903,
+Aquasure,Operational Health,Agent and licence signals,Active agents,,,27,
+Aquasure,Operational Health,Agent and licence signals,Light agents,,,3,
+Aquasure,Operational Health,Agent and licence signals,With signatures,,,0,
+Aquasure,Operational Health,Active seats by licence type,Full agent,,,21,Active users
+Aquasure,Operational Health,Active seats by licence type,Administrator (full agent),,,3,Active users
+Aquasure,Operational Health,Active seats by licence type,Light agent,,,3,Active users
+Aquasure,Operational Health,Active people by Zendesk role,L1 Support,,,13,Full agent
+Aquasure,Operational Health,Active people by Zendesk role,Admin,,,3,Administrator (full agent)
+Aquasure,Operational Health,Active people by Zendesk role,L2 Support,,,3,Full agent
+Aquasure,Operational Health,Active people by Zendesk role,Leadership,,,3,Full agent
+Aquasure,Operational Health,Active people by Zendesk role,Light agent,,,3,Light agent
+Aquasure,Operational Health,Active people by Zendesk role,Contributor,,,1,Full agent
+Aquasure,Operational Health,Active people by Zendesk role,L3 Support,,,1,Full agent
+Aquasure,Operational Health,Top macros,AQS::Email::Warranty Registration::Registration Completed,,,691,Active
+Aquasure,Operational Health,Top macros,AQS::Email::Warranty Registration::Missing Information,,,619,Active
+Aquasure,Operational Health,Top macros,AQS::Internal::Call Notes,,,372,Active
+Aquasure,Operational Health,Top macros,AQS::Email::Product Issues::Order Information Request,,,363,Active
+Aquasure,Operational Health,Top macros,AQS::Escalations::Partnership Assignment,,,328,Active
+Aquasure,Operational Health,Top macros,IF::Escalation::Assign to Next Level,,,210,Active
+Aquasure,Operational Health,Top macros,IF::Internal::Call Notes,,,151,Active
+Aquasure,Operational Health,Top macros,AQS::Chat::Warranty Registration::Registration Completed,,,113,Active
+Aquasure,Operational Health,Top macros,AQS::Email::Product Issues::Softener::Brine Draw Troubleshoot,,,88,Active
+Aquasure,Operational Health,Top macros,AQS::Email::Product Issues::Softener::Gallons Not Tracking,,,81,Active
+Aquasure,Operational Health,Monthly volume,2025-10,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2025-11,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2025-12,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-01,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-02,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-03,1,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-04,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-05,0,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-06,7,0,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-07,5981,419,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-08,6931,558,,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-09,1389,100,,Exact Search Count
+Aquasure,Operational Health,By brand (sample),Aquasure,,,107,Solved: 107; FRT median: 20 min; One-touch: 18; CSAT: 100.0%
+Aquasure,Operational Health,By brand (sample),Pro+Aqua,,,9,Solved: 9; FRT median: 2d 18h; One-touch: 2; CSAT: No data
+Aquasure,Operational Health,By brand (sample),Clarus Pool & Spa,,,4,Solved: 4; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By brand (sample),iFilters,,,3,Solved: 3; FRT median: 50 min; One-touch: 1; CSAT: 100.0%
+Aquasure,Operational Health,By group (sample),L1 Support,,,74,Solved: 74; FRT median: 21 min; One-touch: 17; CSAT: No data
+Aquasure,Operational Health,By group (sample),Unassigned,,,28,Solved: 28; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By group (sample),Non-Agents,,,6,Solved: 6; FRT median: 2h 4m; One-touch: 2; CSAT: 100.0%
+Aquasure,Operational Health,By group (sample),L3 Product & Quality Escalations,,,6,Solved: 6; FRT median: 2d 7h; One-touch: 2; CSAT: 100.0%
+Aquasure,Operational Health,By group (sample),L2 Specialists,,,6,Solved: 6; FRT median: 4 min; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By group (sample),Leadership,,,3,Solved: 3; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Unassigned,,,29,Solved: 29; FRT median: 3 min; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Alexis,,,16,Solved: 16; FRT median: 1h 20m; One-touch: 4; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Nick,,,10,Solved: 10; FRT median: 1d 16h; One-touch: 3; CSAT: 100.0%
+Aquasure,Operational Health,By agent (sample),Josiah,,,10,Solved: 10; FRT median: 1h 13m; One-touch: 2; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Robert,,,8,Solved: 8; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Cristina,,,7,Solved: 7; FRT median: 2h 51m; One-touch: 1; CSAT: No data
+Aquasure,Operational Health,By agent (sample),28654150392860,,,7,Solved: 7; FRT median: 8 min; One-touch: 1; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Nomasonto Zwane,,,7,Solved: 7; FRT median: 19 min; One-touch: 4; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Lindeka Zuma,,,7,Solved: 7; FRT median: 24 min; One-touch: 2; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Arthur,,,4,Solved: 4; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Admin,,,3,Solved: 3; FRT median: 32 min; One-touch: 2; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Brian,,,3,Solved: 3; FRT median: 4 min; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),CX Experts Support,,,2,Solved: 2; FRT median: 9 min; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Madison,,,2,Solved: 2; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Zulie,,,2,Solved: 2; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Sithembile Sibiya,,,2,Solved: 2; FRT median: 8 min; One-touch: 2; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Amanda,,,2,Solved: 2; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Noluthando Zuma,,,1,Solved: 1; FRT median: No data; One-touch: 0; CSAT: No data
+Aquasure,Operational Health,By agent (sample),Nokuhle Nxumalo,,,1,Solved: 1; FRT median: No data; One-touch: 0; CSAT: No data

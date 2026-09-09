@@ -1,0 +1,6 @@
+{
+  "app_id": 123456,
+  "parameters": {
+    "service_url": "https://config-sync.example.com"
+  }
+}

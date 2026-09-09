@@ -1,0 +1,49 @@
+.record-summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  list-style-position: outside;
+}
+
+.record-summary .record-meta {
+  margin-top: 0;
+}
+
+.record[open] .record-summary {
+  margin-bottom: 10px;
+}
+
+.record-value {
+  color: #2f3941;
+  font: inherit;
+  margin: 0;
+  max-height: 320px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.kv {
+  grid-template-columns: 180px minmax(0, 1fr);
+}
+
+.main,
+.page-head > div,
+.panel-head > div {
+  min-width: 0;
+}
+
+.page-head .button-row {
+  justify-content: flex-end;
+}
+
+.panel-head {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .kv {
+    grid-template-columns: 1fr;
+  }
+}

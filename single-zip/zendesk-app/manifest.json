@@ -1,0 +1,19 @@
+{
+  "name": "CXE Zendesk Success Management",
+  "author": {
+    "name": "CX Experts",
+    "email": "support@cxexperts.co.za",
+    "url": "https://cxexperts.co.za"
+  },
+  "version": "1.4.7",
+  "frameworkVersion": "2.0",
+  "defaultLocale": "en",
+  "private": true,
+  "singleInstall": true,
+  "parameters": [],
+  "location": {
+    "support": {
+      "nav_bar": "assets/iframe.html"
+    }
+  }
+}

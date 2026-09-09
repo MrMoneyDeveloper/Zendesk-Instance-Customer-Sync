@@ -1,0 +1,111 @@
+{
+  "custom_objects_v2": {
+    "objects": [
+      {
+        "key": "cxe_zd_sync_connection",
+        "title": "CXE Zendesk Config Connection",
+        "title_pluralized": "CXE Zendesk Config Connections",
+        "description": "Encrypted connection metadata owned by the CXE Zendesk Configuration Sync app.",
+        "include_in_list_view": false
+      }
+    ],
+    "object_fields": [
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_client",
+        "title": "CXE Client",
+        "description": "Related record in the authoritative client custom object.",
+        "type": "lookup",
+        "relationship_target_type": "zen:custom_object:client"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_domain",
+        "title": "Zendesk Domain",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_api_email",
+        "title": "API Email",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_auth_type",
+        "title": "Authentication Type",
+        "type": "dropdown",
+        "custom_field_options": [
+          { "name": "API token", "value": "api_token" },
+          { "name": "OAuth", "value": "oauth" }
+        ]
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_credential_envelope",
+        "title": "Encrypted Credential Envelope",
+        "description": "AES-256-GCM ciphertext. Never contains a plaintext credential.",
+        "type": "textarea"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_enabled",
+        "title": "Enabled",
+        "type": "checkbox"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_connection_status",
+        "title": "Connection Status",
+        "type": "dropdown",
+        "custom_field_options": [
+          { "name": "Connected", "value": "connected" },
+          { "name": "Invalid", "value": "invalid" },
+          { "name": "Disabled", "value": "disabled" },
+          { "name": "Permission Issue", "value": "permission_issue" },
+          { "name": "Error", "value": "error" }
+        ]
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_test_at",
+        "title": "Last Test At",
+        "description": "ISO-8601 timestamp of the latest credential test.",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_sync_at",
+        "title": "Last Sync At",
+        "description": "ISO-8601 timestamp of the latest successful sync.",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_http_status",
+        "title": "Last HTTP Status",
+        "type": "integer"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_error",
+        "title": "Last Error",
+        "description": "Sanitised operational error. Never contains credentials or authorization headers.",
+        "type": "textarea"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_credential_updated_at",
+        "title": "Credential Updated At",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_auth_version",
+        "title": "Authentication Version",
+        "type": "text"
+      }
+    ],
+    "object_triggers": []
+  }
+}

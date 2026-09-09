@@ -1,0 +1,107 @@
+Client,Report,Section,Item,Status / channel,Value,Additional detail
+Aquasure,Combined Executive Report,Methodology,Ticket volume,Exact Search Count,15386,Email/Web Form and native Messaging only; monthly counts are not limited by Search result pagination
+Aquasure,Combined Executive Report,Methodology,Duration and satisfaction metrics,Bounded API sample,123,Bounded stratified API sample: up to 60 tickets from five monthly cohorts across the 12-month window. Monthly Email/Web and Messaging volumes use exact Zendesk Search Count queries. Metric-set coverage 123 (100.0%)
+Aquasure,Combined Executive Report,Methodology,Full-population KPI validation,Zendesk Explore required,,"Zendesk Explore is the authoritative full-population reporting surface for these KPIs. The public Zendesk API reference does not expose an Explore query-results endpoint to this single-ZIP app. Validate reply time, resolution time, requester wait, CSAT and rated ratio in the Support and Messaging Explore datasets before final client use; API and Explore results can differ because their calculations, date filters, processing and refresh timing differ."
+Aquasure,Operational Health,Channel metrics,Tickets Created Monthly (average over last 12 months),Email / Web Form,1192.4,
+Aquasure,Operational Health,Channel metrics,Tickets Created Monthly (average over last 12 months),Messaging,89.8,
+Aquasure,Operational Health,Channel metrics,"First Reply Time (median, calendar)",Email / Web Form,25 min,
+Aquasure,Operational Health,Channel metrics,"First Reply Time (median, calendar)",Messaging,21 min,
+Aquasure,Operational Health,Channel metrics,"Full Resolution Time (median, calendar)",Email / Web Form,20 min,
+Aquasure,Operational Health,Channel metrics,"Full Resolution Time (median, calendar)",Messaging,21h 17m,
+Aquasure,Operational Health,Channel metrics,"Requester Wait Time (median, calendar)",Email / Web Form,11 min,
+Aquasure,Operational Health,Channel metrics,"Requester Wait Time (median, calendar)",Messaging,2h 36m,
+Aquasure,Operational Health,Channel metrics,Satisfaction Score,Email / Web Form,100.0%,
+Aquasure,Operational Health,Channel metrics,Satisfaction Score,Messaging,No data,
+Aquasure,Operational Health,Channel metrics,% Tickets Rated (of solved tickets),Email / Web Form,3.3%,
+Aquasure,Operational Health,Channel metrics,% Tickets Rated (of solved tickets),Messaging,0.0%,
+Aquasure,Operational Health,Queue risks,Unsolved,,709,
+Aquasure,Operational Health,Queue risks,Stale unsolved >7d,,3,
+Aquasure,Operational Health,Queue risks,Stale pending >7d,,3,
+Aquasure,Operational Health,Queue risks,Negative CSAT,,54,
+Aquasure,Operational Health,Queue risks,Suspended,,903,
+Aquasure,Operational Health,Agent and licence signals,Active agents,,27,
+Aquasure,Operational Health,Agent and licence signals,Light agents,,3,
+Aquasure,Operational Health,Agent and licence signals,With signatures,,0,
+Aquasure,Operational Health,Active seats by licence type,Full agent,,21,Active users
+Aquasure,Operational Health,Active seats by licence type,Administrator (full agent),,3,Active users
+Aquasure,Operational Health,Active seats by licence type,Light agent,,3,Active users
+Aquasure,Operational Health,Active people by Zendesk role,L1 Support,Full agent,13,Active users
+Aquasure,Operational Health,Active people by Zendesk role,Admin,Administrator (full agent),3,Active users
+Aquasure,Operational Health,Active people by Zendesk role,L2 Support,Full agent,3,Active users
+Aquasure,Operational Health,Active people by Zendesk role,Leadership,Full agent,3,Active users
+Aquasure,Operational Health,Active people by Zendesk role,Light agent,Light agent,3,Active users
+Aquasure,Operational Health,Active people by Zendesk role,Contributor,Full agent,1,Active users
+Aquasure,Operational Health,Active people by Zendesk role,L3 Support,Full agent,1,Active users
+Aquasure,Operational Health,Monthly volume,2025-10,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2025-11,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2025-12,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-01,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-02,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-03,Email/Web | Messaging,1 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-04,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-05,Email/Web | Messaging,0 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-06,Email/Web | Messaging,7 | 0,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-07,Email/Web | Messaging,5981 | 419,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-08,Email/Web | Messaging,6931 | 558,Exact Search Count
+Aquasure,Operational Health,Monthly volume,2026-09,Email/Web | Messaging,1389 | 100,Exact Search Count
+Aquasure,Capability Scorecard,Set Strong Foundations,Is there a Zendesk Help Centre present?,Yes,10,Self-Service Centre; 13 categories and 119 articles detected.; Source: Help Center API
+Aquasure,Capability Scorecard,Getting Good,Has the URL been redirected via CNAME to a recognisable URL (support.experts.co.za)?,Yes,2,Self-Service Centre; 3 brand host mapping(s) detected.; Source: Brands API
+Aquasure,Capability Scorecard,Getting Good,"Are you making use of public profiles, giving access to tickets to logged in users?",Needs review,2,Self-Service Centre; The API exposes end-user settings but cannot prove the intended portal permission experience.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Good,Is the Herlp Centre Branded?,Yes,5,"Self-Service Centre; Brand logo, URL, or host mapping detected.; Source: Brands API"
+Aquasure,Capability Scorecard,Getting Great,Are you using a custom theme?,Needs review,5,"Self-Service Centre; 12 Guide theme record(s) were returned, but the API does not prove which theme is live or how extensively it is customised.; Source: Guide Themes API and visual review"
+Aquasure,Capability Scorecard,Becoming Best in Class,"Do you have a custom built, bespoke Help Centre that matches their actual website?",Needs review,5,Self-Service Centre; A visual and functional comparison with the company website is required.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Good,Are you using Dynamic forms?,Yes,6,Self-Service Centre; 15 form(s) contain conditional rules.; Source: Ticket Forms API
+Aquasure,Capability Scorecard,Getting Good,Do On-Hold Tickets open up after a specified time?,Yes,5,Business Rules; A single automation contains timed on-hold-to-open evidence.; Source: Automations API
+Aquasure,Capability Scorecard,Getting Good,Do Pending tickets solve after a specified amount of time?,Yes,5,Business Rules; A single automation contains timed pending-to-solved evidence.; Source: Automations API
+Aquasure,Capability Scorecard,Getting Good,Omnichannel/Automatic Routing present?,Yes,9,Business Rules; Omnichannel routing is enabled.; Source: Account Settings API
+Aquasure,Capability Scorecard,Becoming Best in Class,Predictive routing enabled?,Needs review,4,Business Rules; No reliable predictive-routing flag is exposed in the standard response.; Source: Account Settings API and manual verification
+Aquasure,Capability Scorecard,Set Strong Foundations,Grouped using accordion?,Yes,1,Empowered Employees; Nested view naming using :: was detected.; Source: Views API
+Aquasure,Capability Scorecard,Getting Good,Do you use Emojis in your views?,Yes,1,Empowered Employees; Non-ASCII visual markers were detected in view titles.; Source: Views API
+Aquasure,Capability Scorecard,Getting Good,Are there specific views for management/agents?,Needs review,2,Empowered Employees; View audience cannot be confirmed from naming alone.; Source: Views API
+Aquasure,Capability Scorecard,Getting Good,Are you using the Play Button?,Needs review,2,Empowered Employees; The API response does not reliably prove day-to-day Play Button use.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Good,Are your views set up to put the most important ticket at the top?,Yes,3,Empowered Employees; Priority/SLA sorting evidence was detected in a view.; Source: Views API
+Aquasure,Capability Scorecard,Set Strong Foundations,Are there custom views?,Yes,7,Empowered Employees; 66 active/custom view records were returned.; Source: Views API
+Aquasure,Capability Scorecard,Getting Great,Are you using Guided Mode?,No,5,Empowered Employees; Focus/guided mode is not enabled.; Source: Account Settings API
+Aquasure,Capability Scorecard,Set Strong Foundations,Phone Connected?,Yes,5,Omnichannel; Voice ticket traffic was observed in the report window.; Source: Incremental Tickets API
+Aquasure,Capability Scorecard,Set Strong Foundations,Email Connected?,Yes,5,Omnichannel; 10 recipient address(es) and recent email/web tickets were detected.; Source: Recipient Addresses and Tickets APIs
+Aquasure,Capability Scorecard,Set Strong Foundations,Messaging Connected?,Yes,5,Omnichannel; 1077 messaging ticket(s) were observed in the report window.; Source: Tickets API
+Aquasure,Capability Scorecard,Set Strong Foundations,WhatsApp Connected?,Needs review,5,Omnichannel; No WhatsApp traffic was observed; verify the channel setup directly.; Source: Tickets API
+Aquasure,Capability Scorecard,Getting Good,Social Media Messaging Channels Connected?,Needs review,5,Omnichannel; No social messaging traffic was observed; verify channel setup directly.; Source: Tickets API
+Aquasure,Capability Scorecard,Getting Great,Do Google Reviews create tickets?,Needs review,2,"Omnichannel; Channel-framework tickets can be detected, but the originating review integration needs confirmation.; Source: Manual verification"
+Aquasure,Capability Scorecard,Getting Great,Do App reviews create tickets?,Needs review,2,"Omnichannel; Channel-framework tickets can be detected, but the originating review integration needs confirmation.; Source: Manual verification"
+Aquasure,Capability Scorecard,Becoming Best in Class,"If you have an app, are you using the SDK? (Native in-app chat and knowledge surfacing)",Needs review,2,Omnichannel; No recent SDK-originated ticket was observed.; Source: Tickets API
+Aquasure,Capability Scorecard,Set Strong Foundations,"Have custom email addresses been set up correctly or at all? (SPF, DNS, TXT)",Yes,5,Omnichannel; 10 recipient address(es) expose a passing verification status.; Source: Recipient Addresses API
+Aquasure,Capability Scorecard,Getting Good,Is there a Basic Bot set up to handle all messaging channels?,Needs review,4,Move to Messaging; Bot flow configuration is not fully exposed by the standard Support APIs.; Source: Manual verification
+Aquasure,Capability Scorecard,Becoming Best in Class,Is there an Advanced AI Agent in place?,Needs review,5,"Move to Messaging; AI-related settings are active, but they do not prove an Advanced AI Agent is deployed on a live channel.; Source: Account Settings API and manual verification"
+Aquasure,Capability Scorecard,Set Strong Foundations,Have Agents done training?,Needs review,10,Empowered Employees; This is a people/process question and requires confirmation.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Good,Have Admins done training?,Needs review,10,Empowered Employees; This is a people/process question and requires confirmation.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Great,Admins signed up to receive important updates via Zendesk thread? (Ask) | This Link,Needs review,2,Empowered Employees; This is a people/process question and requires confirmation.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Great,Making use of Light Agents?,Yes,2,Empowered Employees; 3 light agent(s) were detected.; Source: Users API
+Aquasure,Capability Scorecard,Becoming Best in Class,Custom-build CRM ZAF?,Needs review,1,"Empowered Employees; An installed app has CRM-related naming, but metadata cannot prove it is a custom-built ZAF CRM.; Source: App Installations API and implementation review"
+Aquasure,Capability Scorecard,Getting Good,"Are notification triggers customised to include your name, ticket number and SLA expectations?",Needs review,3,"Business Rules; Notification-rule placeholders were detected, but the exact customer-facing wording and SLA expectation must be reviewed.; Source: Triggers API and content review"
+Aquasure,Capability Scorecard,Getting Good,Are notification triggers optimised for inside and outside of business hours?,Yes,3,Business Rules; A single rule contains a business-hours condition.; Source: Triggers and Automations APIs
+Aquasure,Capability Scorecard,Getting Good,Has the toolbar color been customised?,Yes,1,Business Rules; A toolbar/header colour is configured.; Source: Account Settings API
+Aquasure,Capability Scorecard,Set Strong Foundations,Are all the licenses being used?,Needs review,5,Reporting & Insights; Active seats are counted by licence type and Zendesk/custom role. Inactive-user analysis is intentionally excluded from this report.; Source: Users API and manual commercial review
+Aquasure,Capability Scorecard,Getting Great,Is there currently a QA process in place?,Needs review,5,Reporting & Insights; QA product entitlement does not prove an active operational QA process.; Source: Manual verification
+Aquasure,Capability Scorecard,Becoming Best in Class,Are you leveraging Zendesk's Automatic Qiality Assurance Tool?,Needs review,5,Reporting & Insights; QA product entitlement does not prove an active operational QA process.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Great,"Are Intent, Sentiment, and Language detection being mapped?",Needs review,5,"Reporting & Insights; Intent, sentiment, and language fields were detected, but field presence does not prove active mapping and reporting.; Source: Ticket Fields API and workflow review"
+Aquasure,Capability Scorecard,Getting Great,Is Macro Suggestions for agents turned on?,Needs review,3,Empowered Employees; Copilot feature configuration requires product-specific verification.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Good,Is Zendesk suggesting respondses for agents based on availabl;e knowledge sources and Procedures?,Needs review,5,Empowered Employees; Copilot feature configuration requires product-specific verification.; Source: Manual verification
+Aquasure,Capability Scorecard,Becoming Best in Class,Are you leveraging Zendesk's Workforce Management Tool?,Needs review,5,"Reporting & Insights; WFM-related settings or an installation were detected, but active operational use cannot be proven from installation metadata.; Source: Account Settings and Apps APIs plus usage review"
+Aquasure,Capability Scorecard,Getting Great,Is SSO (Single Sign-On) enabled?,No,1,Empowered Employees; No SSO configuration was detected.; Source: Security Settings API
+Aquasure,Capability Scorecard,Set Strong Foundations,Do you have a schedule(s) set-up?,Yes,2,Business Rules; 2 business-hours schedule(s) were detected.; Source: Business Hours API
+Aquasure,Capability Scorecard,Set Strong Foundations,Do you make use of Macros?,Yes,5,Empowered Employees; 1380 macro record(s) were detected.; Source: Macros API
+Aquasure,Capability Scorecard,Set Strong Foundations,Are your triggers classified into categories?,Yes,1,Business Rules; 13 trigger categories detected.; Source: Trigger Categories API
+Aquasure,Capability Scorecard,Getting Great,Do emails have a custom html header and footer?,Yes,2,Business Rules; Custom email template/header/footer settings were returned.; Source: Account Settings API
+Aquasure,Capability Scorecard,Set Strong Foundations,Do you have automatic Agent Signatures set up?,No,1,Business Rules; No agent signatures were detected.; Source: Users API
+Aquasure,Capability Scorecard,Set Strong Foundations,Have SLA's been set up?,Yes,4,Reporting & Insights; 11 SLA policies detected.; Source: SLA Policies API
+Aquasure,Capability Scorecard,Getting Good,Escalation Automations for SLA's,Yes,2,Business Rules; SLA escalation rule evidence was detected.; Source: Triggers and Automations APIs
+Aquasure,Capability Scorecard,Getting Good,Are you using Side-Conversations?,Yes,2,Empowered Employees; Side Conversations settings are active.; Source: Account Settings API
+Aquasure,Capability Scorecard,Getting Good,Are you making use of custom Agent Roles?,Yes,1,Empowered Employees; 11 custom role(s) were detected.; Source: Custom Roles API
+Aquasure,Capability Scorecard,Set Strong Foundations,Are you capturing CSAT on all channels?,Needs review,10,"Reporting & Insights; CSAT is enabled, but no rated Messaging tickets were observed in the sample; Email/Web has 3 rated ticket(s). This does not prove survey configuration is absent.; Source: Account Settings and Incremental Tickets APIs"
+Aquasure,Capability Scorecard,Set Strong Foundations,Are you capturing Contact Drivers?,Needs review,5,"Reporting & Insights; A contact-driver style field was detected, but field presence alone does not prove agents populate it consistently.; Source: Ticket Fields API and data-quality review"
+Aquasure,Capability Scorecard,Set Strong Foundations,"Are you reporting on Contact Drivers through a pie chart, daily, weekly and monthly?",Needs review,10,Reporting & Insights; Explore dashboard contents and schedules are not available through the standard Support API.; Source: Manual verification
+Aquasure,Capability Scorecard,Set Strong Foundations,"Are you tracking/monitoring KPIO's such as First Reply, Full REsolution and REquester Wait times?",Needs review,10,"Reporting & Insights; This report calculated first reply, full resolution, and requester wait metrics from 123 in-window metric sets, but it cannot prove the client was already monitoring them.; Source: Incremental Tickets API and reporting-process review"
+Aquasure,Capability Scorecard,Getting Good,Exporting reports automatically?,Needs review,3,Reporting & Insights; Explore delivery schedules are not exposed by the standard Support API.; Source: Manual verification
+Aquasure,Capability Scorecard,Getting Good,Are you capturing systems Requests and reporting on these?,Needs review,5,"Empowered Employees; A systems-request style field was detected, but field presence does not prove consistent capture or reporting.; Source: Ticket Fields API and reporting-process review"
+Aquasure,Capability Scorecard,Getting Great,Time-Tracking app,Yes,5,Reporting & Insights; A time-tracking app installation was detected.; Source: App Installations API

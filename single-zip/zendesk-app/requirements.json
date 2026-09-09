@@ -1,0 +1,177 @@
+{
+  "custom_objects_v2": {
+    "objects": [
+      {
+        "key": "cxe_zd_sync_connection",
+        "include_in_list_view": false,
+        "title": "CXE Zendesk Config Connection",
+        "title_pluralized": "CXE Zendesk Config Connections"
+      },
+      {
+        "key": "cxe_zd_sync_job",
+        "include_in_list_view": false,
+        "title": "CXE Zendesk Config Sync Job",
+        "title_pluralized": "CXE Zendesk Config Sync Jobs"
+      }
+    ],
+    "object_fields": [
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_client",
+        "title": "Client",
+        "type": "lookup",
+        "relationship_target_type": "zen:custom_object:client"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_domain",
+        "title": "Zendesk Domain",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_api_email",
+        "title": "API / Integration Email",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_auth_type",
+        "title": "Authentication Type",
+        "type": "dropdown",
+        "custom_field_options": [
+          { "name": "Zendesk API token", "value": "api_token" },
+          { "name": "Zendesk OAuth access token", "value": "oauth" }
+        ]
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_credential_envelope",
+        "title": "Legacy Credential Envelope",
+        "type": "textarea"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_zis_connection_name",
+        "title": "Zendesk ZIS Connection Name",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_enabled",
+        "title": "Enabled",
+        "type": "checkbox"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_connection_status",
+        "title": "Connection Status",
+        "type": "dropdown",
+        "custom_field_options": [
+          { "name": "Connected", "value": "connected" },
+          { "name": "Credential invalid", "value": "invalid" },
+          { "name": "Disabled", "value": "disabled" },
+          { "name": "Permission issue", "value": "permission_issue" },
+          { "name": "Error", "value": "error" }
+        ]
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_test_at",
+        "title": "Last Connection Test",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_sync_at",
+        "title": "Last Successful Sync",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_health_at",
+        "title": "Last Health Report",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_health_overrides",
+        "title": "Health Scorecard Overrides",
+        "type": "textarea"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_health_window_months",
+        "title": "Health Reporting Window",
+        "type": "integer"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_http_status",
+        "title": "Last HTTP Status",
+        "type": "integer"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_last_error",
+        "title": "Last Error",
+        "type": "textarea"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_credential_updated_at",
+        "title": "Credential Updated At",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_connection",
+        "key": "cxe_auth_version",
+        "title": "Credential Storage Version",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_client_id",
+        "title": "Client Record ID",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_run_id",
+        "title": "Run ID",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_scope",
+        "title": "Temporary Result Scope",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_key",
+        "title": "Configuration Section Key",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_root",
+        "title": "Response Root Key",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_url",
+        "title": "Read-only Zendesk URL",
+        "type": "text"
+      },
+      {
+        "object_key": "cxe_zd_sync_job",
+        "key": "cxe_job_requested_at",
+        "title": "Requested At",
+        "type": "text"
+      }
+    ],
+    "object_triggers": []
+  }
+}

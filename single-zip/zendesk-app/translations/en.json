@@ -1,0 +1,7 @@
+{
+  "app": {
+    "name": "CXE Zendesk Config Sync",
+    "short_description": "Read-only client Zendesk configuration sync for CX Experts.",
+    "long_description": "Internal CX Experts tool for connecting managed Zendesk instances, reading configuration, and exporting or copying configuration for analysis."
+  }
+}

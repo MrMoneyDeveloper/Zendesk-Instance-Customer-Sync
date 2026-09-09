@@ -1,0 +1,27 @@
+{
+  "name": "CXE Zendesk Configuration Sync",
+  "author": {
+    "name": "CX Experts",
+    "email": "support@cx-experts.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "version": "0.1.0",
+  "frameworkVersion": "2.0",
+  "signedUrls": true,
+  "location": {
+    "support": {
+      "nav_bar": {
+        "url": "{{setting.service_url}}/app",
+        "icon": "assets/icon_nav_bar.svg"
+      }
+    }
+  },
+  "parameters": [
+    {
+      "name": "service_url",
+      "type": "text",
+      "required": true
+    }
+  ]
+}
